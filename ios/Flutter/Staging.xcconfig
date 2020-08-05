@@ -1,0 +1,11 @@
+//
+//  Staging.xcconfig
+//  Runner
+//
+//  Created by Masahiro Kaneko on 2020/08/02.
+//
+
+FLUTTER_FLAVOR=Staging
+PRODUCT_BUNDLE_IDENTIFIER=com.beilinc.boilerplate.st
+DISPLAY_NAME=[St] Boilerplate
+ASSETCATALOG_COMPILER_APPICON_NAME=AppIcon-staging

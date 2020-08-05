@@ -1,7 +1,46 @@
+import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter/material.dart';
+import 'package:logger/logger.dart';
+import 'package:provider/provider.dart';
 
-void main() {
-  runApp(MyApp());
+final logger = Logger(
+  printer: PrettyPrinter(),
+);
+
+enum Flavor {
+  development,
+  staging,
+  production,
+}
+
+void main() async {
+  final flavor = EnumToString.fromString(
+    Flavor.values,
+    const String.fromEnvironment('FLAVOR'),
+  );
+  logger.i('flavor: $flavor');
+
+  runApp(
+    flavor == null
+        ? const ColoredBox(
+            color: Colors.white,
+            child: Center(
+              child: Text(
+                '--dart-define=FLAVOR=xxx should be specified.',
+                textDirection: TextDirection.ltr,
+                style: TextStyle(
+                  color: Colors.black,
+                ),
+              ),
+            ),
+          )
+        : MultiProvider(
+            providers: [
+              Provider.value(value: flavor),
+            ],
+            child: MyApp(),
+          ),
+  );
 }
 
 class MyApp extends StatelessWidget {

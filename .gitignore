@@ -31,6 +31,14 @@
 .pub/
 /build/
 
+# Firebase related
+**/google-services.json
+**/GoogleService-Info.plist
+**/firebase-config.js
+
+# keystore
+**.keystore
+
 # Web related
 lib/generated_plugin_registrant.dart
 

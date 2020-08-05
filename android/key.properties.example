@@ -1,0 +1,9 @@
+storePassword=<password from previous step>
+keyPassword=<password from previous step>
+keyAlias=releaseKey
+storeFile=<location of the key store file>
+
+storePasswordDebug=<password from previous step>
+keyPasswordDebug=<password from previous step>
+keyAliasDebug=debugKey
+storeFileDebug=<location of the key store file>

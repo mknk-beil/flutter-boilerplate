@@ -1,0 +1,11 @@
+//
+//  Production.xcconfig
+//  Runner
+//
+//  Created by Masahiro Kaneko on 2020/08/02.
+//
+
+FLUTTER_FLAVOR=Production
+PRODUCT_BUNDLE_IDENTIFIER=com.beilinc.boilerplate
+DISPLAY_NAME=Boilerplate
+ASSETCATALOG_COMPILER_APPICON_NAME=AppIcon-production

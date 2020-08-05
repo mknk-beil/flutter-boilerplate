@@ -1,0 +1,11 @@
+//
+//  Development.xcconfig
+//  Runner
+//
+//  Created by Masahiro Kaneko on 2020/08/02.
+//
+
+FLUTTER_FLAVOR=Development
+PRODUCT_BUNDLE_IDENTIFIER=com.beilinc.boilerplate.dev
+DISPLAY_NAME=[Dev] Boilerplate
+ASSETCATALOG_COMPILER_APPICON_NAME=AppIcon-development

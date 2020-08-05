@@ -1,0 +1,9 @@
+//
+//  Debug-Development.xcconfig
+//  Runner
+//
+//  Created by Masahiro Kaneko on 2020/08/02.
+//
+
+#include "Debug.xcconfig"
+#include "Development.xcconfig"
