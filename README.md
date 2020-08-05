@@ -29,6 +29,12 @@ samples, guidance on mobile development, and a full API reference.
 
 `assets/images/icon-<development/staging/production>.png` のアイコン画像を適切な 1024*1024 px の画像に変更する
 
+その後以下のコマンドを実行
+
+```
+flutter packages pub run flutter_launcher_icons:main
+```
+
 ## Firebase 周辺の設定
 
 ### ビルド環境ごとの Firebase project を作成する
